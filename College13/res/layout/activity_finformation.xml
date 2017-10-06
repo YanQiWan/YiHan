@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="资料"
+        android:textSize="50sp"
+        android:gravity="center"/>
+    <TextView 
+        android:id="@+id/filedata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        />
+    <Button 
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:onClick="onClickDownload"/>
+	<ListView
+        android:id="@+id/commentlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#000"
+        android:dividerHeight="2px"
+        android:headerDividersEnabled="true"/>
+    
+</LinearLayout>
